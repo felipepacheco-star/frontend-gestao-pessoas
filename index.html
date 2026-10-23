@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestão de Pessoas – Listagem</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Gestão de Pessoas</h1>
+    <nav>
+      <a href="index.html" class="ativo">Listagem</a>
+      <a href="cadastro.html">Cadastrar</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h2>Pessoas cadastradas</h2>
+      <div id="mensagem" role="status"></div>
+      <table>
+        <thead>
+          <tr><th>ID</th><th>Nome</th><th>Idade</th><th></th></tr>
+        </thead>
+        <tbody id="tabela-pessoas">
+          <tr><td colspan="4" class="vazio">Carregando...</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <script src="js/listar.js"></script>
+</body>
+</html>
