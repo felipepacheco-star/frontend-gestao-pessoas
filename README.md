@@ -5,7 +5,7 @@
 | | |
 |---|---|
 | **Professor** | Vitor Lima Santana |
-| **Aluno(a)** | [Nome completo] |
+| **Aluno(a)** | [Felipe Gonçalves Pacehco] |
 | **Disciplina** | Programação Back-End |
 
 ## 1. Objetivo
@@ -124,14 +124,24 @@ Navegador (HTML/CSS/JS)  ──fetch (JSON)──▶  API Express (:3000)  ─�
 
 ## 9. Repositórios
 
-- Back-End (Fork): [Inserir link]
-- Front-End: [Inserir link]
+- Back-End (Fork): [https://github.com/felipepacheco-star/ProjetoFullStack.git]
+- Front-End: [https://github.com/felipepacheco-star/frontend-gestao-pessoas.git]
 
 ## 10. Conclusão do aluno
 
 [Escreva sua conclusão aqui, com suas palavras: como funciona a comunicação Front-End/Back-End, a finalidade do POST, por que usar async/await e try/catch e quais dificuldades você encontrou.]
 
----
+--- Como funciona a comunicação entre o Front-End e o Back-End?
+O Front-End é a parte que aparece no navegador, tipo o formulário. O Back-End é a API em Node.js que fica ligada no computador e conversa com o banco de dados. Quando eu preencho o formulário e clico em cadastrar, o JavaScript usa o fetch() e manda os dados em JSON pra API. A API salva no banco e devolve uma resposta. Aí o Front-End lê essa resposta e mostra na tela se deu certo ou deu erro.
+
+Qual é a finalidade do método POST?
+O POST serve pra mandar dados novos pro servidor. No caso, pra cadastrar uma pessoa. O GET só busca o que já existe, e o POST cria um registro novo no banco. Os dados vão dentro da requisição e não aparecem na URL.
+
+Por que utilizamos async/await e try/catch?
+Pedir uma coisa pra API demora um pouco porque depende da rede e do banco. O async/await faz o código esperar a resposta chegar sem travar a página. Já o try/catch pega os erros. Se a API estiver desligada o programa não quebra. O catch pega o erro e mostra uma mensagem pro usuário.
+
+Quais dificuldades eu encontrei durante a atividade?
+A primeira foi que o Git não estava instalado e o terminal dava erro quando eu tentava clonar o repositório. Tive que instalar e abrir o terminal de novo. Também estava rodando o comando na pasta System32 e precisei mudar pra uma pasta minha. Outra dificuldade foi entender que a mensagem "Não foi possível conectar à API" não era problema do Front-End. Era o Back-End que estava desligado e eu precisava rodar o npm start e deixar o terminal aberto. Por fim tive que ajustar o .env com os dados do meu banco pra API conectar. Depois de resolver isso tudo eu entendi melhor como o Front-End, a API e o banco funcionam juntos.
 
 **Créditos** — Professor responsável: Vitor Lima Santana · Desenvolvido por: [Nome do aluno]
 

@@ -1,4 +1,3 @@
-// ===== LISTAGEM (GET) e EXCLUSÃO (DELETE) =====
 const API = "http://localhost:3000/pessoas";
 
 const tabela = document.getElementById("tabela-pessoas");
@@ -20,11 +19,11 @@ async function listar() {
           <a class="botao pequeno secundario" href="editar.html?id=${p.id}">Editar</a>
           <button class="botao perigo" onclick="excluir(${p.id})">Excluir</button>
         </td>`;
-      linha.children[1].textContent = p.nome; // textContent = mais seguro
+      linha.children[1].textContent = p.nome; 
       tabela.appendChild(linha);
     }
   } catch (erro) {
-    msg.textContent = "❌ Não foi possível conectar à API.";
+    msg.textContent = " Não foi possível conectar à API.";
     msg.className = "erro";
   }
 }

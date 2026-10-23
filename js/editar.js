@@ -1,7 +1,6 @@
-// ===== EDIÇÃO (GET por id + PUT) =====
 const API = "http://localhost:3000/pessoas";
 
-const id = new URLSearchParams(location.search).get("id"); // vem da URL: editar.html?id=3
+const id = new URLSearchParams(location.search).get("id"); 
 const form = document.getElementById("form-editar");
 const msg = document.getElementById("mensagem");
 
@@ -10,7 +9,6 @@ function mostrar(texto, tipo) {
   msg.className = tipo;
 }
 
-// Ao abrir a página, busca a pessoa e preenche o formulário
 async function carregar() {
   try {
     const resposta = await fetch(`${API}/${id}`);
@@ -22,7 +20,6 @@ async function carregar() {
   }
 }
 
-// Ao enviar, atualiza os dados
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
   const nome = document.getElementById("nome").value.trim();
