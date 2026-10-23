@@ -143,6 +143,6 @@ Pedir uma coisa pra API demora um pouco porque depende da rede e do banco. O asy
 Quais dificuldades eu encontrei durante a atividade?
 A primeira foi que o Git não estava instalado e o terminal dava erro quando eu tentava clonar o repositório. Tive que instalar e abrir o terminal de novo. Também estava rodando o comando na pasta System32 e precisei mudar pra uma pasta minha. Outra dificuldade foi entender que a mensagem "Não foi possível conectar à API" não era problema do Front-End. Era o Back-End que estava desligado e eu precisava rodar o npm start e deixar o terminal aberto. Por fim tive que ajustar o .env com os dados do meu banco pra API conectar. Depois de resolver isso tudo eu entendi melhor como o Front-End, a API e o banco funcionam juntos.
 
-**Créditos** — Professor responsável: Vitor Lima Santana · Desenvolvido por: [Nome do aluno]
+**Créditos** — Professor responsável: Vitor Lima Santana · Desenvolvido por: [Felipe Pacheco]
 
 *Atividade 08 – Desenvolvimento Web e Consumo de APIs REST*
